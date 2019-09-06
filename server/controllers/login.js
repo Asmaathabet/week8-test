@@ -2,6 +2,8 @@ const { join } = require('path');
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
+const { getUser } = require('../database/queries/getUser');
+
 require('env2')('./config.env');
 
 
