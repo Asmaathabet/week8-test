@@ -8,6 +8,7 @@ const login = require('./login');
 const router = express.Router();
 
 router.get('/login', login.renderLogin);
+router.post('/login', login.postLogin);
 router.get('/signup', signup.renderSignup);
 router.post('/signup', signup.postSignup);
 router.get('/cities', city.renderCities);
