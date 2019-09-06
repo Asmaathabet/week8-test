@@ -3,6 +3,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const { getUser } = require('../database/queries/getUser');
+const { loginSchema } = require('./ValidationSchemas');
 
 require('env2')('./config.env');
 
@@ -12,5 +13,6 @@ exports.renderLogin = (req, res) => {
 };
 
 exports.postLogin = (req, res, next) => {
+
 
 }
