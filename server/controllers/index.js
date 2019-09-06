@@ -9,6 +9,7 @@ const router = express.Router();
 
 router.get('/login', login.renderLogin);
 router.get('/signup', signup.renderSignup);
+router.post('/signup', signup.postSignup);
 router.get('/cities', city.renderCities);
 router.get('/all-cities', city.getAllCities);
 router.post('/add-city', city.add);
