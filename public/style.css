@@ -1,80 +1,86 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
 .nav-wrapper {
-  text-align: center;
-  padding: 10px 0;
-  background-color: salmon;
-  font-size: 28px;
-  margin-bottom: 100px;
-  color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: salmon;
+    font-size: 28px;
+    margin-bottom: 100px;
+    color: white;
 }
 
 .nav-wrapper a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 form,
 .table-container {
-  width: 60%;
-  margin: 0 auto 50px;
+    width: 60%;
+    margin: 0 auto 50px;
 }
 
 form input {
-  width: 100%;
-  display: block;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  font-size: 18px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  line-height: 35px;
+    width: 100%;
+    display: block;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 35px;
 }
 
 .brand-logo {
-  text-decoration: none;
-  color: white;
-  font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
 }
 
 button {
-  width: 13%;
-  height: 33px;
-  margin-top: 4%;
-  background-color: salmon;
-  border: none;
-  color: white;
-  font-size: 0.8rem;
-  margin-left: 314px;
+    width: 13%;
+    height: 33px;
+    margin-top: 4%;
+    background-color: salmon;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 314px;
 }
 
 table,
 table tr {
-  width: 100%;
+    width: 100%;
 }
 
 table tr th {
-  width: 50%;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-  font-size: 16px;
-  color: salmon;
-  padding-bottom: 10px;
+    width: 50%;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+    color: salmon;
+    padding-bottom: 10px;
 }
 
 table tr td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
+}
+
+.logout {
+    float: right;
+    margin: 0.2rem 2rem;
+    font-size: 22px;
 }
