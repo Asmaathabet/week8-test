@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Signup</title>
-  </head>
-  
-  <body>
+</head>
+
+<body>
     <section class="signup">
-      <h1>Sign up</h1>
-      <form class="signup__form" method="POST" action="/signup">
-        <label for="email"
-          >Email:
+        <h1>Sign up</h1>
+        <form class="signup__form" method="POST" action="/signup">
+            <label for="email">Email:
           <input id="email" type="email" name="email" required />
         </label>
-        <label for="password"
-          >Password:
+            <label for="password">Password:
           <input id="password" type="password" name="password" required />
         </label>
-        <label for="confirmPassword"
-          >Confirm password:
-          <input id="confirmPassword" type="password" required />
+            <label for="confirmPassword">Confirm password:
+          <input id="confirmPassword" name="confirm_password" type="password" required />
         </label>
-        <p class="error" aria-live="polite"></p>
-        <button type="submit">Submit</button>
-      </form>
+            <p class="error" aria-live="polite"></p>
+            <button type="submit">Submit</button>
+        </form>
     </section>
-  </body>
+</body>
+
 </html>
