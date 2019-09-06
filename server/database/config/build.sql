@@ -1,6 +1,12 @@
 BEGIN;
 
-DROP TABLE IF EXISTS city,users cascade;
+DROP TABLE IF EXISTS users,city cascade;
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY NOT NULL,
+  email VARCHAR(255) UNIQUE , 
+  password VARCHAR(255)
+);
 
 CREATE TABLE city (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -8,11 +14,6 @@ CREATE TABLE city (
   country TEXT NOT NULL
 );
 
-CREATE TABLE users (
-  id SERIAL PRIMARY KEY NOT NULL,
-  email VARCHAR(255) UNIQUE , 
-  password VARCHAR(255)
-);
 
 INSERT INTO city (name, country) VALUES
   ('Gaza', 'Palestine'),
