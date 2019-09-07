@@ -10,7 +10,10 @@ require('env2')('./config.env');
 const SecretKey = process.env.SECRET_KEY;
 
 exports.renderLogin = (req, res) => {
-    res.sendFile(join(__dirname, '..', '..', 'public', 'login.html'));
+    if (req.cookies.access) {
+        res.redirect('/cities')
+    } else
+        res.sendFile(join(__dirname, '..', '..', 'public', 'login.html'));
 };
 
 exports.postLogin = (req, res, next) => {

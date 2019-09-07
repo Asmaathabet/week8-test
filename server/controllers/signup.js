@@ -9,6 +9,9 @@ require('env2')('./config.env');
 const SecretKey = process.env.SECRET_KEY;
 
 exports.renderSignup = (req, res) => {
+    if (req.cookies.access) {
+        res.redirect('/cities');
+    }
     res.sendFile(join(__dirname, '..', '..', 'public', 'signup.html'));
 };
 
